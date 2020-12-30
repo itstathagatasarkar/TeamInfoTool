@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Goals and Achievements</title>
+	<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		.row {
+		  margin-left:-5px;
+		  margin-right:-5px;
+		}
+		  
+		.column {
+		  float: left;
+		  width: 50%;
+		  padding: 5px;
+		}
+
+		/* Clearfix (clear floats) */
+		.row::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
+
+		table {
+		  border-collapse: collapse;
+		  border-spacing: 0;
+		  width: 100%;
+		  border: 1px solid #ddd;
+		}
+		
+
+		th, td {
+		  border-style:solid;
+		  text-align: left;
+		  padding: 16px;
+		  color : black;
+		}
+
+		tr:nth-child(even) {
+		  background-color: #f2f2f2;
+		}
+
+		.soma{
+			box-sizing: border-box;
+			color: black;
+			border:1px solid #CCC;
+			border-width:12px;
+			text-align:center;
+			border-style:ridge;
+			width: 450px;
+
+		}
+		
+		.exp{
+			color: black;
+			border:1px solid #CCC;
+			border-width:12px;
+			text-align:center;
+			border-style:ridge;
+			width: 450px;
+		}
+		.button {
+			  background-color: #979A9A;
+			  border: none;
+			  color: black;
+			  padding: 15px 32px;
+			  text-align: center;
+			  font-size : larger;
+			  font-weight : bold;
+			  text-decoration: none;
+			  display: inline-block;
+			  margin: 10px 2px;
+			  cursor: pointer;
+		}
+</style>
+</head>
+<body style="background-color:#F4F6F7">
+	<form name="DataCollections" method = "get">
+			<center>
+			<h2 class = "soma"> Goals and Achievements</h2>
+			</center>
+			<div class="row">
+			<div class="column">
+			<table name="GoalTable" div = >
+				<tr>
+					<td>Goals</td>
+					<td><input placeholder="Enter Your Goals" type="text"></td>
+					<td><button>Add (+) </button></td>
+				</tr>
+			</table>
+			</div>
+			<div class="column">
+			<table name = "AchievementTable">
+				<tr>
+					<td>Achievements</td>
+					<td><input placeholder="Enter Your Achievement" type="text"></td>
+					<td><button>Add (+) </button></td>
+				</tr>
+			</table>
+			</div>
+			</div>
+			
+				<tr>
+					<td colspan = 3>
+						<center><button class="button">Submit</button></center>
+					</td>
+				</tr>
+	</form>
+</body>
+</html>
